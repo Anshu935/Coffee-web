@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <style type="text/css">
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+.all-content{
+  background: #f7f5f2;
+}
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: #b2744c;
+  border-radius: 10px;
+}
+html::-webkit-scrollbar{
+  width: 10px;
+}
+/* navbar */
+#navbar{
+  background-color: #b2744c;
+  font-family: 'Roboto', sans-serif;
+}
+#logo img{
+  border-radius: 10px;
+  width: 160px;
+  margin-left: 40px;
+}
+.navbar-nav{
+  margin-left: 50px;
+}
+.nav-item .nav-link{
+  color: black;
+  margin-left: 10px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.nav-item .nav-link:hover{
+  background: #f7f5f2;
+  border-radius: 5px;
+  color: black;
+}
+#navbar form button{
+  background: black;
+  color: white;
+  border: 1px solid white;
+}
+/* navbar */
+/* home content */
+#home{
+    width: 100%;
+    height: 90vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./images/bc3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+    font-family: 'Roboto', sans-serif;
+}
+.content{
+  padding-top: 210px;
+  margin-left: 56px;
+}
+.content h3{
+  font-size: 50px;
+  color: white;
+}
+.content p{
+  margin-top: 10px;
+  color: white;
+}
+#btn{
+  width: 150px;
+  height: 36px;
+  margin-top: 20px;
+  background: white;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#btn:hover{
+  background: #b2744c;
+  color: white;
+}
+/* home content */
+
+
+
+
+
+
+/* about */
+#about{
+  width: 100%;
+  height: 100vh;
+  background: #f7f5f2;
+  font-family: 'Roboto', sans-serif;
+}
+#about .container{
+  padding-top: 70px;
+}
+.heading{
+  text-align: center;
+  margin-bottom: 50px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.heading span{
+  color: #b2744c;
+}
+#about .card{
+  border-radius: 10px;
+}
+#about .card img{
+  border-radius: 10px;
+}
+#about-btn{
+  width: 200px;
+  height: 36px;
+  background: transparent;
+  border: 2px solid #b2744c;
+  color: #b2744c;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#about-btn:hover{
+  background: #b2744c;
+  color: white;
+}
+@media screen and (max-width:982px){
+  #about p{
+    font-size: 8px;
+  }
+}
+@media screen and (max-width:766px){
+  #about p{
+    font-size: 15px;
+  }
+  #about{
+    height: 120vh;
+  }
+}
+/* about */
+
+/* top cards */
+.top-cards{
+  width: 100%;
+  height: 60vh;
+  background: #f7f5f2;
+  font-family: 'Roboto', sans-serif;
+}
+.heading2{
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.heading2 span{
+  color: #b2744c;
+}
+.top-cards .container{
+  margin-top: 30px;
+}
+.top-cards .card{
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.top-cards .card img{
+  border-radius: 10px;
+}
+.top-cards .card h3{
+  text-align: center;
+  padding-top: 78px;
+  color: white;
+}
+.top-cards .card:hover{
+  transform: translateY(-10px);
+}
+@media screen and (max-width:767px){
+ .top-cards{
+  height: 170vh;
+ } 
+}
+@media screen and (max-width:500px){
+ .top-cards{
+  height: 150vh;
+ } 
+}
+@media screen and (max-width:370px){
+ .top-cards{
+  height: 120vh;
+ } 
+}
+/* top cards */
+
+
+
+
+
+
+
+/* menu */
+.menu{
+  width: 100%;
+  background: #f7f5f2;
+  font-family: 'Roboto', sans-serif;
+}
+.heading3{
+  text-align: center;
+  font-size: 30px;
+  color: #b2744c;
+  font-weight: bold;
+  border-bottom: 2px solid #b2744c;
+}
+#container2{
+  margin-top: 20px;
+}
+.menu .card{
+  background: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.star i{
+  color: #b2744c;
+}
+.menu h3{
+  color: #b2744c;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.menu p{
+  font-size: 16px;
+  color: #b2744c;
+  padding-top: 10px;
+}
+.menu p span{
+  float: right;
+  cursor: pointer;
+}
+/* menu */
+
+
+
+
+
+
+
+/* product */
+.product{
+  width: 100%;
+  background: #f7f5f2;
+  font-family: 'Roboto', sans-serif;
+}
+.heading4{
+  text-align: center;
+  color: #b2744c;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 70px;
+  border-bottom: 2px solid #b2744c;
+}
+#container3{
+  margin-top: 30px;
+}
+.product h3{
+  text-align: center;
+  color: #b2744c;
+  font-size: 23px;
+}
+.product p{
+  color: #b2744c;
+  padding-top: 10px;
+}
+.product p span{
+  float: right;
+  cursor: pointer;
+}
+/* product */
+
+
+
+
+
+
+
+/* gallary */
+#gallary{
+  width: 100%;
+}
+#gallary h1{
+  text-align: center;
+  color: black;
+  margin-top: 60px;
+  font-weight: bold;
+}
+#gallary h1 span{
+  color: #b2744c;
+}
+#gallary .card{
+  border-radius: 10px;
+}
+#gallary .card img{
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* gallary */
+
+
+
+
+/* contact */
+.contact{
+  width: 100%;
+  height: 100vh;
+  background: #f7f5f2;
+  padding-top: 70px;
+}
+.contact .container{
+  width: 100%;
+  height: 80vh;
+  background: white;
+  background: linear-gradient(90deg, white 80%, #b2744c 20%);
+  border-radius: 10px;
+}
+.heading6{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 70px;
+}
+.heading6 span{
+  color: #b2744c;
+}
+.contact p{
+  font-weight: bold;
+  font-size: 13px;
+  color: black;
+}
+.contact input{
+  width: 360px;
+  border: none;
+  border-bottom: 1px solid;
+}
+#contact-btn{
+  width: 200px;
+  height: 36px; 
+  border: none;
+  background: #b2744c;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#col{
+  width: 40%;
+  height: 56vh;
+  background: black;
+  margin-top: 78px;
+}
+.contact h1{
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.contact #col p{
+  font-size: 15px;
+  color: white;
+  margin-left: 13px;
+  padding-top: 30px;
+}
+@media screen and (max-width:766px){
+  .contact .container{
+  background: white;
+  }
+  #col{
+    width: 100%;
+    background: #b2744c;
+  }
+  .contact{
+    height: 150vh;
+  }
+}
+@media screen and (max-width:400px){
+  .contact input{
+    width: 250px;
+  }
+  
+}
+/* contact */
+
+
+
+
+
+/* blogs */
+.blogs{
+  width: 100%;
+  background: #f7f5f2;
+}
+.blogs h1{
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+.blogs h1 span{
+  color: #b2744c;
+}
+.blogs .container{
+  margin-top: 60px;
+}
+.blogs h5{
+  color: #b2744c;
+}
+#blogbtn{
+  width: 200px;
+  height: 36px;
+  border: none;
+  color: white;
+  background: #b2744c;
+  cursor: pointer;
+}
+/* blogs */
+
+
+
+
+
+
+/* footer */
+#footer{
+  width: 100%;
+  background: #b2744c;
+  margin-top: 50px;
+}
+.footer-logo img{
+  width: 180px;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#footer .socail-links i{
+  font-size: 17px;
+  margin-left: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.credite{
+  color: white;
+  margin-top: 20px;
+}
+.credite{
+  text-shadow: 0px 0px 1px black;
+}
+.credite a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.credite a span{
+  color: black;
+}
+.copyright span{
+  color: black;
+}
+/* footer */
+html{
+  scroll-behavior: smooth;
+}
+.arrow{
+  position: fixed;
+  border-radius: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
+    </style>
+
+    
+
+</head>
+<body>
+
+  <div class="all-content">
+   
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="logo"><img src="image/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallary">Gallary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blogs">Blogs</a>
+          </li>
+         
+         
+         
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+<!-- home section -->
+   <section id="home">
+    <div class="content">
+      <h3>Start Your Day With a <br> Fresh Coffee</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, fugit
+         <br>ipsum dolor sit amet consectetur.
+      </p>
+      <button id="btn">Shop Now</button>
+    </div>
+   </section>
+
+<!-- home section -->
+
+
+
+<!-- about section -->
+<div class="about" id="about">
+  <div class="container">
+  <div class="heading">About <span>Us</span></div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="image/about.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3>What Makes Our Coffee Special?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima numquam porro consequuntur ipsum, nulla aliquam amet quam consequatur expedita.
+          <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus dicta quia maxime! Suscipit rerum similique non perferendis maiores rem, cumque explicabo exercitationem deserunt illum in aperiam natus impedit recusandae?
+          <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem voluptates harum, quis excepturi voluptatum!
+         </p>
+         <button id="about-btn">Learn More.</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- about section -->
+
+
+   
+
+
+
+<!-- top cards -->
+<section class="top-cards">
+  <div class="heading2">Top <span>Categories</span></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="image/c1.png" alt="">
+          
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="image/c2.png" alt="">
+          
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="image/c3.png" alt="">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- top cards -->
+
+
+
+
+
+
+<!-- menu -->
+<section class="menu" id="menu">
+  <div class="container">
+  <div class="heading3">Menu</div>
+</div>
+  <div class="container" id="container2">
+  <div class="row">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="image/m1.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Coffee</h3>
+          <p>$99 <strike>$100</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="image/m2.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Coffee</h3>
+          <p>$90 <strike>$110</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="image/m3.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Coffee</h3>
+          <p>$100 <strike>$200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="image/m4.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Coffee</h3>
+          <p>$120 <strike>$150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="image/m5.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Coffee</h3>
+          <p>$200 <strike>$300</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="image/m6.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Coffee</h3>
+          <p>$30 <strike>$50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="image/m7.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Coffee</h3>
+          <p>$100 <strike>$200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="image/m8.png" alt="">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Coffee</h3>
+          <p>$120 <strike>$150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- menu -->
+
+
+
+
+
+
+
+
+<!-- product -->
+<section id="product" class="product">
+  <div class="container">
+  <div class="heading4">Products</div>
+</div>
+  <div class="container" id="container3">
+
+    <div class="row">
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="image/arabica coffee.png" alt="">
+          <div class="card-body">
+            <h3>Arabic Coffee</h3>
+          <p>$120 <strike>$150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="image/Cappuccino coffee.png" alt="">
+          <div class="card-body">
+            <h3>Cappuccino Coffee</h3>
+          <p>$250 <strike>$350</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+
+          </div>
+        </div>
+      </div>
+      <div
+<!-- our gallary -->
+
+
+
+
+<!-- contact -->
+<section class="contact" id="contact">
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+       <div class="heading6">Contact <span>Us</span></div>
+
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, blanditiis
+        <br>ipsum dolor sit amet consectetur.
+       < class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="image/Black Coffee.png" alt="">
+          <div class="card-body">
+            <h3>Black Coffee</h3>
+          <p>$130 <strike>$150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="image/Decaf caffee.png" alt="">
+          <div class="card-body">
+            <h3>Decaf Coffee</h3>
+          <p>$120 <strike>$150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- product -->
+
+
+
+
+<!-- our gallary -->
+<div class="container" id="gallary">
+  <h1>Our <span>Gallary</span></h1>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="image/image1.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="image/image2.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="image/image3.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="image/image4.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="image/image5.png" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card">
+        <img src="image/image6.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>/p>
+
+       <input class="form-control" type="text" placeholder="Name" aria-label="default input example"><br>
+       <input class="form-control" type="email" placeholder="Email" aria-label="default input example"><br>
+       <input class="form-control" type="number" placeholder="Number" aria-label="default input example"><br>
+       <button id="contact-btn">Send Message</button>
+      </div>
+      <div class="col-md-5" id="col">
+        <h1>Info</h1>
+        <p><i class="fa-regular fa-envelope"></i> example@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +92000000000000000</p>
+       <p><i class="fa-solid fa-building-columns"></i> Karcahi Sindh Pakistan</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, culpa</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- contact -->
+
+
+   <!-- blogs -->
+   <section class="blogs" id="blogs">
+    <h1>Latest <span>Blogs</span></h1>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="image/b1.png" alt="">
+          <div class="card-body">
+            <h3>Lorem, ipsum dolor</h3>
+            <h5>Admin / 6 March 2020</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis aperiam magnam nostrum quae distinctio, id minima repellat eveniet quaerat.</p>
+            <button id="blogbtn">Read More.</button>
+          </div>
+        </div>  
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="image/b2.png" alt="">
+          <div class="card-body">
+            <h3>Lorem, ipsum dolor</h3>
+            <h5>Admin / 6 March 2020</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis aperiam magnam nostrum quae distinctio, id minima repellat eveniet quaerat.</p>
+            <button id="blogbtn">Read More.</button>
+          </div>
+        </div>  
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="image/b3.png" alt="">
+          <div class="card-body">
+            <h3>Lorem, ipsum dolor</h3>
+            <h5>Admin / 6 March 2020</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis aperiam magnam nostrum quae distinctio, id minima repellat eveniet quaerat.</p>
+            <button id="blogbtn">Read More.</button>
+          </div>
+        </div>  
+        </div>
+        
+      </div>
+
+    </div>
+
+
+   </section>
+   <!-- blogs -->
+
+
+
+
+
+
+
+   <!-- footer -->
+   <footer id="footer">
+    <div class="footer-logo text-center"><img src="image/logo.png" alt=""></div>
+    <div class="socail-links text-center">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+    <div class="credite text-center">
+        Designed By <a href="#"> anshu dave</a>
+    </div>
+    <div class="copyright text-center">
+      &copy; Copyright <strong><span>Coffee Shop</span></strong>. All Rights Reserved
+  </div>
+</footer>
+   <!-- footer -->
+
+   <a href="#" class="arrow"><i><img src="image/up-arrow.png" alt="" width="50px"></i></a>
+
+
+  </div>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script> 
+  <script type="text/javascript" src="js/all.min.js"></script> 
+
+</body>
+</html>
+</body>
+</html>
